@@ -22,7 +22,7 @@ More examples and expected behavior for corner cases are available in the
 `package test suite <https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py>`__.
 
 Issues, updates, pull requests, etc should be directed
-`to github <https://github.com/ppannuto/python-headLineStyle>`__.
+`to github <https://github.com/vinodbaste/python_headline_style>`__.
 
 
 Installation
