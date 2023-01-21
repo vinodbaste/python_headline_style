@@ -23,18 +23,15 @@ The filter employs some heuristics to guess abbreviations that don't need conver
 +------------------+----------------+
 
 More examples and expected behavior for corner cases are available in the
-`package test suite <https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py>`.
+<a href="https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py" target="_blank">package test suite</a>.
 
 Issues, updates, pull requests, etc should be directed
-`to github <https://github.com/vinodbaste/python_headline_style>`.
-
+<a href="https://github.com/vinodbaste/python_headline_style" target="_blank">to github</a>.
 
 Installation
 ------------
 
 The easiest method is to simply use pip:
-
-::
 
     (sudo) pip install headline_style
 
@@ -44,15 +41,16 @@ Usage
 
 headline_style provides only one function, simply:
 
-.. code-block:: python
+```python
 
     >>> from headLineStyle import headLineStyle
     >>> headLineStyle('a thing')
     'A Thing'
+```
 
 A callback function may also be supplied, which will be called for every word:
 
-.. code-block:: python
+```python
 
     >>> def abbreviations(word, **kwargs):
     ...   if word.upper() in ('TCP', 'UDP'):
@@ -60,6 +58,7 @@ A callback function may also be supplied, which will be called for every word:
     ...
     >>> headLineStyle.headLineStyle('a simple tcp and udp wrapper', callback=abbreviations)
     'A Simple TCP and UDP Wrapper'
+```
 
 The callback function is supplied with an ``all_caps`` keyword argument, indicating
 whether the entire line of text was entirely capitalized. Returning ``None`` from
@@ -71,7 +70,7 @@ Command Line Usage
 
 headLineStyle also provides a command line utility ``headLineStyle``:
 
-::
+```python
 
     $ headLineStyle make me a title
     Make Me a Title
@@ -79,6 +78,7 @@ headLineStyle also provides a command line utility ``headLineStyle``:
     Can Pipe and/or Whatever Else
     # Or read/write files:
     $ headLineStyle -f infile -o outfile
+ ```
 
 In addition, commonly used acronyms can be kept in a local file
 at `~/.headLineStyle.txt`. This file contains one acronym per line.
@@ -86,12 +86,10 @@ The acronym will be maintained in the title as it is provided.
 Once there is e.g. one line saying `TCP`, then it will be automatically
 used when used from the command line.
 
-::
-
+```python
     $ headLineStyle I LOVE TCP
     I Love TCP
-
-
+```
 Limitations
 -----------
 
@@ -112,6 +110,7 @@ library, pull requests are very welcome!
 
 # Support my work
 <a href="https://www.buymeacoffee.com/bastevinod" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 
 # License
 ```
