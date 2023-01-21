@@ -7,7 +7,6 @@ The list of "SMALL words" which are not capped comes from the New York
 Times Manual of Style, plus some others like 'vs' and 'v'.
 
 The filter employs some heuristics to guess abbreviations that don't need conversion.
-
 +------------------+----------------+
 | Original         | Conversion     |
 +==================+================+
