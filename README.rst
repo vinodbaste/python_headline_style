@@ -63,10 +63,8 @@ The callback function is supplied with an ``all_caps`` keyword argument, indicat
 whether the entire line of text was entirely capitalized. Returning ``None`` from
 the callback function will allow headLineStyle to process the word as normal.
 
-
 Command Line Usage
 ------------------
-
 headLineStyle also provides a command line utility ``headLineStyle``:
 
 .. code-block:: python
@@ -83,10 +81,11 @@ The acronym will be maintained in the title as it is provided.
 Once there is e.g. one line saying `TCP`, then it will be automatically
 used when used from the command line.
 
-```python
+.. code-block:: python
     $ headLineStyle I LOVE TCP
     I Love TCP
-```
+
+
 Limitations
 -----------
 
@@ -102,15 +101,8 @@ not be handled correctly.
 If anyone has concrete solutions to improve these or other shortcomings of the
 library, pull requests are very welcome!
 
-**If you find this library useful, please consider starring this repository from the top of this page.**
-[![](https://i.imgur.com/oSLuE0e.png)](#)
-
-# Support my work
-<a href="https://www.buymeacoffee.com/bastevinod" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-
 # License
-```
+-----------
 Copyright [2022] [Vinod Baste]
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -124,5 +116,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-```
+-----------
 
