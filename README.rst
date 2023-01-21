@@ -1,11 +1,6 @@
 headline_style
 =========
 
-[![GitHub tag](https://img.shields.io/github/tag/vinodbaste/image-compressor?include_prereleases=&sort=semver&color=blue)](https://github.com/vinodbaste/image-compressor/releases/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue)](#license)
-[![Story - Medium](https://img.shields.io/badge/Story-Medium-2ea44f)](https://medium.com/codex/image-compressor-13dbfd0445a3)
-[![GitHub - VinodBaste](https://img.shields.io/badge/GitHub-VinodBaste-4664c6)](https://github.com/vinodbaste/python_headline_style)
-
 This filter changes a given text to Title Caps, and attempts to be clever
 about SMALL words like a/an/the in the input.
 The list of "SMALL words" which are not capped comes from the New York
@@ -116,5 +111,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
------------
 
