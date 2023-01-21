@@ -1,15 +1,20 @@
 headline_style
 =========
 
+[![GitHub tag](https://img.shields.io/github/tag/vinodbaste/image-compressor?include_prereleases=&sort=semver&color=blue)](https://github.com/vinodbaste/image-compressor/releases/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue)](#license)
+[![Story - Medium](https://img.shields.io/badge/Story-Medium-2ea44f)](https://medium.com/codex/image-compressor-13dbfd0445a3)
+[![GitHub - VinodBaste](https://img.shields.io/badge/GitHub-VinodBaste-4664c6)](https://github.com/vinodbaste/python_headline_style)
+
 This filter changes a given text to Title Caps, and attempts to be clever
 about SMALL words like a/an/the in the input.
 The list of "SMALL words" which are not capped comes from the New York
 Times Manual of Style, plus some others like 'vs' and 'v'.
 
 The filter employs some heuristics to guess abbreviations that don't need conversion.
-+------------------+----------------+
++------------------+----------------+                                                                                                               
 | Original         | Conversion     |
-+==================+================+
++==================+================+                                                                                                               
 | this is a test   | This Is a Test |
 +------------------+----------------+
 | THIS IS A TEST   | This Is a Test |
@@ -18,10 +23,10 @@ The filter employs some heuristics to guess abbreviations that don't need conver
 +------------------+----------------+
 
 More examples and expected behavior for corner cases are available in the
-`package test suite <https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py>`__.
+`package test suite <https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py>`.
 
 Issues, updates, pull requests, etc should be directed
-`to github <https://github.com/vinodbaste/python_headline_style>`__.
+`to github <https://github.com/vinodbaste/python_headline_style>`.
 
 
 Installation
@@ -101,3 +106,27 @@ not be handled correctly.
 
 If anyone has concrete solutions to improve these or other shortcomings of the
 library, pull requests are very welcome!
+
+**If you find this library useful, please consider starring this repository from the top of this page.**
+[![](https://i.imgur.com/oSLuE0e.png)](#)
+
+# Support my work
+<a href="https://www.buymeacoffee.com/bastevinod" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+# License
+```
+Copyright [2022] [Vinod Baste]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
