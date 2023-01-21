@@ -1,0 +1,2 @@
+[console_scripts]
+headLineStyle = headLineStyle.__init__:cmd

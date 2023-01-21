@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyvenv.cfg
+setup.py
+headLineStyle/__init__.py
+headLineStyle/tests.py
+headline_style.egg-info/PKG-INFO
+headline_style.egg-info/SOURCES.txt
+headline_style.egg-info/dependency_links.txt
+headline_style.egg-info/requires.txt
+headline_style.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: headline-style
+Version: 1.0.0
+Home-page: https://github.com/vinodbaste/python_headline_style
+Author: Vinod Baste
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE

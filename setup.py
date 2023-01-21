@@ -1,21 +1,20 @@
-"""Setup file for headLineStyle.
-
-This is based on the example from PyScaffold (https://pyscaffold.org/).
-`setup.cfg` is used to configure the project.
-
 """
+Setup file for headLineStyle.
+"""
+import setuptools
 
-from setuptools import setup
-
-if __name__ == "__main__":
-    try:
-        setup(use_scm_version={"version_scheme": "no-guess-dev"})
-    except Exception:
-        msg = (
-            "\n\nAn error occurred while building the project, "
-            "please ensure you have the most updated version of setuptools, "
-            "setuptools_scm and wheel with:\n"
-            "   pip install -U setuptools setuptools_scm wheel\n\n"
-        )
-        print(msg)
-        raise
+setuptools.setup(
+    name="headline_style",  # This is the name of the package
+    version="1.0.0",  # The initial release version
+    author="Vinod Baste",  # Full name of the author
+    url="https://github.com/vinodbaste/python_headline_style",
+    packages=setuptools.find_packages(),  # List of all python modules to be installed
+    classifiers=[
+        "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],  # Information to filter the project on PyPi website
+    python_requires='>=3.7',  # Minimum version requirement of the package
+    py_modules=["headLineStyle"],  # Name of the python package
+    install_requires=["regex >=2020.4.4"]  # Install other dependencies if any
+)
