@@ -12,15 +12,13 @@ The list of "SMALL words" which are not capped comes from the New York
 Times Manual of Style, plus some others like 'vs' and 'v'.
 
 The filter employs some heuristics to guess abbreviations that don't need conversion.
-+------------------+----------------+                                                                                                               
-| Original         | Conversion     |
-+==================+================+                                                                                                               
-| this is a test   | This Is a Test |
-+------------------+----------------+
-| THIS IS A TEST   | This Is a Test |
-+------------------+----------------+
-| this is a TEST   | This Is a TEST |
-+------------------+----------------+
+
+| Original       | Conversion     |
+| :--------------|:--------------:| 
+| this is a test | This Is a Test | 
+| THIS IS A TEST | This Is a Test |
+| this is a TEST | This Is a TEST |
+
 
 More examples and expected behavior for corner cases are available in the
 <a href="https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py" target="_blank">package test suite</a>.
