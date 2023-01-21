@@ -1,1 +1,2 @@
 headLineStyle
+headline_style

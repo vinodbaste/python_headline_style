@@ -13,18 +13,22 @@ Times Manual of Style, plus some others like 'vs' and 'v'.
 
 The filter employs some heuristics to guess abbreviations that don't need conversion.
 
-| Original       | Conversion     |
-| :--------------|:--------------:| 
-| this is a test | This Is a Test | 
-| THIS IS A TEST | This Is a Test |
-| this is a TEST | This Is a TEST |
++------------------+----------------+
+| Original         | Conversion     |
++==================+================+
+| this is a test   | This Is a Test |
++------------------+----------------+
+| THIS IS A TEST   | This Is a Test |
++------------------+----------------+
+| this is a TEST   | This Is a TEST |
++------------------+----------------+
 
 
 More examples and expected behavior for corner cases are available in the
-<a href="https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py" target="_blank">package test suite</a>.
+`package test suite <https://github.com/vinodbaste/python_headline_style/blob/main/headLineStyle/tests.py>`__.
 
 Issues, updates, pull requests, etc should be directed
-<a href="https://github.com/vinodbaste/python_headline_style" target="_blank">to github</a>.
+`to github <a href="https://github.com/vinodbaste/python_headline_style>`__.
 
 Installation
 ------------
@@ -39,16 +43,14 @@ Usage
 
 headline_style provides only one function, simply:
 
-```python
-
+.. code-block:: python
     >>> from headLineStyle import headLineStyle
     >>> headLineStyle('a thing')
     'A Thing'
-```
 
 A callback function may also be supplied, which will be called for every word:
 
-```python
+.. code-block:: python
 
     >>> def abbreviations(word, **kwargs):
     ...   if word.upper() in ('TCP', 'UDP'):
@@ -56,7 +58,6 @@ A callback function may also be supplied, which will be called for every word:
     ...
     >>> headLineStyle.headLineStyle('a simple tcp and udp wrapper', callback=abbreviations)
     'A Simple TCP and UDP Wrapper'
-```
 
 The callback function is supplied with an ``all_caps`` keyword argument, indicating
 whether the entire line of text was entirely capitalized. Returning ``None`` from
@@ -68,15 +69,13 @@ Command Line Usage
 
 headLineStyle also provides a command line utility ``headLineStyle``:
 
-```python
-
+.. code-block:: python
     $ headLineStyle make me a title
     Make Me a Title
     $ echo "Can pipe and/or whatever else" | headLineStyle
     Can Pipe and/or Whatever Else
     # Or read/write files:
     $ headLineStyle -f infile -o outfile
- ```
 
 In addition, commonly used acronyms can be kept in a local file
 at `~/.headLineStyle.txt`. This file contains one acronym per line.
