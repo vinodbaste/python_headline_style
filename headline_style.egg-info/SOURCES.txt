@@ -1,6 +1,6 @@
 .gitignore
 LICENSE
-README.md
+README.rst
 pyvenv.cfg
 setup.py
 .idea/.gitignore
